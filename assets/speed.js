@@ -12,8 +12,9 @@ function showResults() {
     var speedBps = Math.round(bitsLoaded / duration);
     try{
 		var request = new XMLHttpRequest();
-		request.open('GET', '/wp-content/plugins/mhm-wp-speedtest/speed.php?bps='+speedBps+'&_'+ Math.random(), true);
-		request.send();
+		request.open('POST', ajax_object.ajax_url, true);
+		request.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+		request.send('action=log_speed&bps='+speedBps);
 	}catch(e){}
 }
 
