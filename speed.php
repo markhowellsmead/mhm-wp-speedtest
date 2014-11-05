@@ -1,5 +1,5 @@
 <?php
-$logdir = $_SERVER['DOCUMENT_ROOT'].'/wp-content/uploads/mhm-speedtest/' . date('Ymd');
+$logdir = $_SERVER['DOCUMENT_ROOT'].'/wp-content/uploads/mhm-wp-speedtest/' . date('Ymd');
 mkdir($logdir, 0755, true);
 file_put_contents(
 	$logdir.'/speed.' .date('H'). '.log',

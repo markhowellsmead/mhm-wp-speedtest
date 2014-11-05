@@ -1,6 +1,6 @@
 var startTime = (new Date()).getTime(), 
 	endTime,
-	imageAddr = '/wp-content/plugins/mhm-speedtest/assets/speed.png?n=' + Math.random(),
+	imageAddr = '/wp-content/plugins/mhm-wp-speedtest/assets/speed.png?n=' + Math.random(),
 	downloadSize = 1441,
 	download = new Image();
 
@@ -12,7 +12,7 @@ function showResults() {
     var speedBps = Math.round(bitsLoaded / duration);
     try{
 		var request = new XMLHttpRequest();
-		request.open('GET', '/wp-content/plugins/mhm-speedtest/speed.php?bps='+speedBps+'&_'+ Math.random(), true);
+		request.open('GET', '/wp-content/plugins/mhm-wp-speedtest/speed.php?bps='+speedBps+'&_'+ Math.random(), true);
 		request.send();
 	}catch(e){}
 }

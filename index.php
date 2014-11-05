@@ -11,7 +11,7 @@ Author URI: http://permanenttourist.ch/
 
 class MHM_Speedtest {
 
-	public $key 	= 'mhm-speedtest';
+	public $key 	= 'mhm-wp-speedtest';
 	public $version = '1.0';
 
 	/////////////////////////////////////////////
