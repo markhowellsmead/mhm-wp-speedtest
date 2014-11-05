@@ -6,6 +6,8 @@ A WordPress extension which logs the response speed of a regular HTTP request fo
 ##Usage
 Just install the plugin. This will then add a JavaScript file reference to the footer of every page. jQuery is not required.
 
+The log file is written to wp-content/uploads/mhm-wp-speedtest with a new subfolder each day and a new file per hour.
+
 Browser support: IE8+ and all modern browsers.
 
 ##Author
