@@ -1,7 +1,7 @@
 #AJAX network speed tester
 
 ##Description
-Logs the response speed of a regular HTTP request for a static file.
+A WordPress extension which logs the response speed of a regular HTTP request for a static file. The request happens via asynchronous AJAX (JavaScript) and so does not block loading of the page.
 
 ##Usage
 Just install the plugin. This will then add a JavaScript file reference to the footer of every page. jQuery is not required.
